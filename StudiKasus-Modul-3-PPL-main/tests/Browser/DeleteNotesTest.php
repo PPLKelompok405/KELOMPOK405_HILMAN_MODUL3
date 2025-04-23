@@ -19,8 +19,8 @@ class DeleteNotesTest extends DuskTestCase
                     ->clickLink('Log in')
                     ->assertSee('Email')
                     ->assertSee('Password')
-                    ->type('email',  'abdul@gmail.com')
-                    ->type('password', '1234')
+                    ->type('email',  'user1@gmail.com')
+                    ->type('password', '12345')
                     ->press('LOG IN')
 
                     ->assertPathIs('/dashboard')
